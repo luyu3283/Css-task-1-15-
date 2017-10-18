@@ -1,0 +1,11 @@
+body {
+    background-color: #68cdd5;
+    margin: 0;
+}
+.mirror {
+    font-size:3rem;
+    color: #fff;
+    margin : 45% 12% ;
+    float: left;
+    line-height:200%;
+}
