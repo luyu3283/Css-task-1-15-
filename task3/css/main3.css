@@ -1,16 +1,28 @@
 body {
-    background-color: #68cdd5;
+    background-color: #6ccdd5;
     margin: 0;
+    color: #fff;
+    font-size: 12px;
 }
 .mirror {
-    font-size:3rem;
-    color: #fff;
-    margin : 45% 12% ;
-    float: left;
-    line-height:200%;
+    position: relative;
+    padding:25% 20%;
+}
+.arrow {
+    text-align: center;
+    padding: 50rem;
+    position: relative;
 }
 
-.blackbar {
-    background-color: #22292c;
-    margin: 5%;
+.medium {
+    font-size:3rem;
+    margin : 45% 12% ;
+    float: left;
+    line-height: 1.5;
+}
+
+.foot {
+    float: left;
+    margin:50% ;
+    padding: 30% 0 0 0 ;
 }
