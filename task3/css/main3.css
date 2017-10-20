@@ -9,7 +9,7 @@ body {
 }
 .mirror {
     position: relative;
-    padding:2rem;
+    padding:3rem;
 }
 .arrow {
     padding: 0.1rem;
@@ -29,6 +29,7 @@ p {
 .foot {
     padding: 3.5rem 0 0 0 ;
     text-align: center;
+
 }
 
 .user{
