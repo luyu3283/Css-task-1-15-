@@ -1,34 +1,34 @@
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body {
     background-color: #6ccdd5;
     margin: 0;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .mirror {
     position: relative;
-    padding:2.5rem;
+    padding:2rem;
 }
 .arrow {
-    padding: 01rem 0 0 0 ;
+    padding: .5rem 0 0 0 ;
     position: relative;
 }
 
 h2 {
-    line-height: 5rem;
+    line-height: 3rem;
     text-align: center;
     padding:2rem;
 }
 p {
     line-height:3rem;
-    font-size: 18px;
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
 .foot {
     padding: 3.5rem 0 0 0 ;
     text-align: center;
-
 }
 
 .user{
