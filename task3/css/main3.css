@@ -1,5 +1,5 @@
 html {
-    font-size: 15px;
+    font-size: 10px;
 }
 body {
     background-color: #6ccdd5;
@@ -9,22 +9,21 @@ body {
 }
 .mirror {
     position: relative;
-    padding:3rem;
+    padding:2.5rem;
 }
 .arrow {
-    padding: 0.1rem;
+    padding: 01rem 0 0 0 ;
     position: relative;
 }
 
 h2 {
     line-height: 5rem;
     text-align: center;
-
+    padding:2rem;
 }
 p {
-    line-height:2.5rem;
-    font-weight:lighter;
-
+    line-height:3rem;
+    font-size: 18px;
 }
 .foot {
     padding: 3.5rem 0 0 0 ;
@@ -34,8 +33,11 @@ p {
 
 .user{
     float: left;
+    margin: 13rem 0 5rem 2rem;
 }
 
 .company {
     float: right;
+    margin: 13rem 2rem 5rem 0 ;
+
 }
