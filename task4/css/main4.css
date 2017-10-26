@@ -25,6 +25,10 @@ header a {
     color: white;
 }
 
+a {
+    color: #6ccdd5;
+}
+
 h2 {
     text-align: center;
     padding: 0;
@@ -91,9 +95,7 @@ input {
     border: none;
     color: white;
 }
-a {
-    color: #6ccdd5;
-}
+
 .lose-code {
     float: right;
     padding: 0 1rem;
