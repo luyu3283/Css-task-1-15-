@@ -1,0 +1,10 @@
+html {
+    font-size:625%;
+}
+
+header, footer {
+    color: #ffffff;
+    position: fixed;
+    background-color: #6ccdd5;
+    font-size: 0.1rem;
+}
