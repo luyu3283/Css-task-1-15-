@@ -1,0 +1,109 @@
+html {
+    font-size:625%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*head*/
+.top {
+    width: 100%;
+    background-color: #6ccdd5;
+    height: .3rem;
+    line-height: .3rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.top-air {
+    float: left;
+    font-size: .1rem;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.top-center {
+    font-size:.15rem;
+    position: fixed;
+    left: 50%;
+    margin-top: -.15rem;
+    margin-left: -.35rem;
+    color: #ffffff;
+}
+
+/*main*/
+
+/*main-top*/
+.main-top {
+    height: 1.5rem;
+    width: 100%;
+    margin-top: .29rem;
+    position: relative;
+    background: url("../img/doctor.png") no-repeat;
+    background-size: cover;
+}
+
+.main-top-left {
+    position: relative;
+    left: .3rem;
+    top: .075rem;
+}
+
+.main-top-right {
+    color: #ffffff;
+    position: absolute;
+    left: 1.3rem;
+    top: 0.3rem;
+}
+
+.top-p1 {
+    font-size: .16rem;
+}
+
+.top-p2 {
+    background: url("../img/Shape1.png") no-repeat;
+    background-size: .1rem;
+    font-size: .05em;
+}
+
+.top-p2-p {
+    position: relative;
+    left: 0.15rem;
+}
+
+/*main-mid*/
+
+.main-mid {
+    height: .4rem;
+    border: .01rem solid #eaeaea;
+}
+
+.main-mid-p {
+    font-size: .14rem;
+    margin-left: .1rem;
+    padding-left: .1rem;
+    border-left: .03rem solid #6ccdd5 ;
+}
+
+/*main-bottom*/
+
+.star1, .star2 {
+    display: inline-block;
+    background: url("../img/star.png") no-repeat left ;
+    background-size: .15rem;
+    padding-left: .18rem;
+    line-height: .2rem;
+}
+
+.star1 {
+    border-right: .01rem solid #eaeaea;
+    padding-right: .3rem;
+}
+ul {
+    font-size: .14rem;
+    list-style: none;
+}
