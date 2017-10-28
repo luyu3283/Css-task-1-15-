@@ -2,10 +2,11 @@ html {
     font-size:625%;
 
 }
-body{
+
+body {
+    margin: 0;
     overflow: hidden;
 }
-
 
 
 header, footer {
@@ -84,31 +85,42 @@ p {
 }
 /*技能部分*/
 
+span {
+    font-size: .15rem;
+}
 
 
-.stand-line, .skill {
+
+.skill {
+    float: left;
+    position: relative;
+    bottom: 2.45rem;
+    right: 1rem;
+    padding-left: .1rem;
+    font-size: .15rem;
+    border-left-color: #6ccdd5;
+    border-left-style: solid;
+}
+
+.star, .mid-two, .mid-tri {
     position: relative;
     overflow: hidden;
 }
-.stand-line {
-    background: url("../img/line-stand.png") no-repeat left; /*可调*/
-    height: 1rem; /*可调*/
-    right: 1rem; /*可调*/
-    bottom: 2.85rem; /*可调*/
-    background-size: 0.015rem; /*可调*/
-    margin-right: 0;
+
+.star {
+    bottom: 3.1rem;
+    right: 1.6rem;
+}
+.mid-two {
+    bottom: 4.25rem;
+    left: .45rem;
+    border-right-color: #6ccdd5;
+    border-right-style: solid;
 }
 
-.skill {
-    margin-left: 0;
-    left: .2rem;
-    bottom: 3.55rem;
-    font-size: .1rem;
+.mid-tri {
+
 }
-
-
-
-
 
 
 
