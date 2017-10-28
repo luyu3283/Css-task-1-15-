@@ -32,6 +32,7 @@ p {
 
 }
 
+/*人物部分*/
 .back-img {
     background: url("../img/doctor.png") no-repeat center;
     width: 100%;
@@ -81,7 +82,37 @@ p {
     background-size: .1rem;
     overflow: hidden;
 }
+/*技能部分*/
 
+
+
+.stand-line, .skill {
+    position: relative;
+    overflow: hidden;
+}
+.stand-line {
+    background: url("../img/line-stand.png") no-repeat left; /*可调*/
+    height: 1rem; /*可调*/
+    right: 1rem; /*可调*/
+    bottom: 2.85rem; /*可调*/
+    background-size: 0.015rem; /*可调*/
+    margin-right: 0;
+}
+
+.skill {
+    margin-left: 0;
+    left: .2rem;
+    bottom: 3.55rem;
+    font-size: .1rem;
+}
+
+
+
+
+
+
+
+/*footer*/
 
 footer {
     display: flex;
