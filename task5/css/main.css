@@ -48,8 +48,8 @@ body {
 }
 
 .main-top-left {
-    position: relative;
-    left: .3rem;
+    position: absolute;
+    left: .2rem;
     top: .075rem;
 }
 
@@ -100,10 +100,69 @@ body {
 }
 
 .star1 {
-    border-right: .01rem solid #eaeaea;
-    padding-right: .3rem;
+    border-right: .02rem solid #eaeaea;
+    padding-right: .2rem;
 }
 ul {
     font-size: .14rem;
+    margin-bottom: .4rem;
+    padding: .1rem;
+    padding-top: 0;
+    margin-top: .1rem;
+}
+
+li {
     list-style: none;
+    border-bottom: .01rem solid #eaeaea;
+    margin-left: .1rem;
+    margin-right: .1rem;
+    position: relative;
+    padding: .08rem;
+}
+.mid-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.1rem;
+    border-right: .02rem solid #eaeaea ;
+    padding-right: .2rem;
+}
+
+.mid-right {
+    /*position: absolute;*/
+    display: inline-block;
+    line-height: .3rem;
+    padding-left: 1rem;
+}
+
+.mid-right-p {
+    font-size: .1rem;
+    line-height: .2rem;
+}
+
+.mid-right-a {
+    font-family: sans-serif;
+    color: red;
+}
+
+/*footer*/
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    height: .4rem;
+    padding: .1rem;
+}
+
+.under-left, .under-right {
+    border: .01rem solid #6ccdd5;
+    border-radius: .05rem;
+    width: 45%;
+    background-color: #ffffff;
+    color: #6ccdd5;
+}
+
+.under-right {
+    border: none;
+    background-color: #6ccdd5;
+    color: #ffffff;
 }
