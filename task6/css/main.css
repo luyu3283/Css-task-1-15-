@@ -47,8 +47,7 @@ header {
 .top-right {
     position: absolute;
     right: 1rem;
-    padding-top: 1rem;
-    padding-right: .5rem;
+    transform: scale(.5,.5);
 }
 
 /*mid*/
