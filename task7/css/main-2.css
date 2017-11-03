@@ -46,7 +46,8 @@ header {
 }
 .main-audio {
     background: #b9e9f5;
-    padding: 2.8%;
+    /*padding: 2.8%;*/
+    line-height: 1rem;
     font-size: 0.25rem;
     margin: 0 1px;
 }
@@ -59,10 +60,13 @@ header {
     border-right: 0.1rem solid transparent;
     border-top: 0.1rem solid #b9e9f5;
 }
-#voice {
+.voice {
     border: none;
     float: right;
     background: #b9e9f5;
+    line-height: .5rem;
+    padding-top: .25rem;
+    padding-right: .3rem;
 }
 .p1 {
     margin: 0;

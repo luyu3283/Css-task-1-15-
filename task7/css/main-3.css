@@ -96,20 +96,24 @@ h2 {
 .main-time {
     display: flex;
     padding-bottom: .5rem;
+    width: 100%;
+
 }
 .day {
-    flex: 0 0 220%;
+    flex: 0 1 80%;
     font-size: 1.5rem;
     color: #515151;
 }
 .hour {
-    flex: 0 0 100%;
+    flex: 0 1 30%;
     color: #d5d5d5;
 }
 
 .main-day,
 .main-night {
     color: #a6a6a6;
+    width: 100%;
+
 }
 
 
