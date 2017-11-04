@@ -1,0 +1,24 @@
+/*通用*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+.font-white {
+    color: #ffffff;
+}
+.flex-box {
+    display: flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bgc-white {
+    background-color: #ffffff;
+}
+
+.list-style {
+    list-style: none;
+}

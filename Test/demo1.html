@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>垂直居中</title>
-    <style type="text/css">
-        /*第一种方法*/
-        /*.parent {*/
-            /*display:table-cell;*/
-            /*vertical-align:middle;*/
-            /*height:20px;*/
-        /*}*/
-        /*第二种方法*/
-        /*.parent{display:inline-block;vertical-align:middle;line-height:20px;}*/
-        .parent{display:flex; align-items:center;}
-    </style>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 响应式的列重置</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="parent">
-        我是一个前端狗
+
+<div class="container">
+    <div class="row" >
+        <div class="col-xs-6 col-sm-3"
+             style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-xs-6 col-sm-3"
+             style="background-color: #dedef8;box-shadow:
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut.
+            </p>
+        </div>
+
+        <div class="clearfix visible-xs"></div>
+
+        <div class="col-xs-6 col-sm-3"
+             style="background-color: #dedef8;
+         box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="col-xs-6 col-sm-3"
+             style="background-color: #dedef8;box-shadow:
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim
+            </p>
+        </div>
     </div>
-    <div class="parent">
-        我是一个前端狗
-    </div>
-    <div class="parent">
-        我是一个前端狗
-    </div>
-    <div class="parent">
-        我是一个前端狗
-    </div>
+</div>
+
 </body>
 </html>
