@@ -22,3 +22,7 @@ html {
 .list-style {
     list-style: none;
 }
+
+.text-line {
+    text-decoration: none;
+}
