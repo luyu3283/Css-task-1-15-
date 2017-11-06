@@ -87,6 +87,14 @@ header {
         line-height: 0.62rem !important
     }
 }
+
+
+/*覆盖bootstrap的focus颜色*/
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: #29b078 !important;
+}
+
 .my-nav a:hover {
     text-decoration: none;
     color: #fff;
@@ -382,7 +390,6 @@ header {
 .main-friend-items {
     padding-left: 0;
     /*text-align: center;*/
-
 }
 
 .friend-div > span {
@@ -402,15 +409,17 @@ header {
     border-radius: 50% 50%;
     /*float: left;*/
     margin: 2px;
-    background-color: #000000;
+    background-color: #999999;
     box-shadow: 0 0 5px rgba(0,0,0,.1);
+
 }
 
 .friend-text {
     display: inline-block;
-    color: #000;
     padding-left: .2rem;
     border-bottom: 2px solid #fff;
+    color: #999999;
+
 }
 .friend-text:hover {
     border-bottom: 2px solid #29b078;
@@ -423,6 +432,7 @@ header {
     padding-right: .1rem;
     margin-bottom: .2rem;
     text-decoration: none !important;
+
 }
 
 .my-col-10 {
