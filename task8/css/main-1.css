@@ -286,12 +286,13 @@
 
 .main-friend-items {
     padding-left: 0;
-    /*text-align: center;*/
+    text-align: center;
+    margin: 20px;
 }
 
 .friend-div > span {
     /*display: inline-block;*/
-
+    float: left;
 }
 
 .friend-div:hover > span {
@@ -307,7 +308,7 @@
     /*float: left;*/
     margin: 2px;
     background-color: #999999;
-    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    /*box-shadow: 0 0 5px rgba(0,0,0,.1);*/
 
 }
 
@@ -316,7 +317,7 @@
     padding-left: .2rem;
     border-bottom: 2px solid #fff;
     color: #999999;
-
+    text-align: left;
 }
 .friend-text:hover {
     border-bottom: 2px solid #29b078;

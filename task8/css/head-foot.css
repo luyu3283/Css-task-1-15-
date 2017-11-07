@@ -111,6 +111,10 @@ footer {
     text-align: left;
 }
 
+/*.foot-items {*/
+    /*max-width: 940px;*/
+/*}*/
+
 .foot-jnshu,
 .foot-website {
     padding: .3rem;
@@ -118,6 +122,15 @@ footer {
 
 .foot-wechat {
     padding-top: .3rem;
+    text-align: right;
+}
+@media only screen and (max-width: 768px) {
+    .foot-wechat {
+        text-align: left;
+        padding: .3rem;
+    }
+
+
 }
 
 
@@ -125,15 +138,25 @@ footer {
 .foot-jnshu > h4 {
     padding-bottom: .5rem;
 }
+.foot-jnshu > span {
+    /*padding-bottom: .5rem;*/
+}
+
 
 .foot-website > h4 {
     padding-bottom: .5rem;
     /*float: right;*/
 }
-.foot-website > span {
-    padding-right: .6rem;
+.website-set > span {
+    padding-right: .3rem;
+}
+.foot-wechat > h4 {
+    font-size: .16rem;
 }
 
+.website-set {
+    margin-bottom: .2rem;
+}
 
 
 .corp-info {
