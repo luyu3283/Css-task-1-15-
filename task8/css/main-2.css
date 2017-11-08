@@ -58,6 +58,50 @@ main {
     border-radius: 5px;
 }
 
+.cover-text {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    /*top: 100%;*/
+    color: #ffffff;
+    background-color: rgba(0,0,0,.7);
+    padding: 60px 32px 0 32px;
+    line-height: 35px;
+    text-align: center;
+    /*width: 100%;*/
+    border-radius: .1rem;
+
+
+    /*transition: all 0.5s ease-in-out;*/
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+    /*transition: width 2s;*/
+    /*transition-timing-function: ;*/
+}
+
+.main-type-web:hover .cover-text {
+    display: block;
+    z-index: 10;
+    height: 500px;
+    cursor: pointer;
+
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+}
+
+.cover-text > h4 {
+    margin: 0;
+    line-height: 24px;
+    text-indent: 10px;
+}
+.cover-text > span {
+    line-height: 24px;
+    text-indent: 10px;
+    /*text-align: left !important;*/
+}
+
+
+
 .main-job-div {
     border-bottom: 1px solid #cccccc;
     /*text-align: left;*/

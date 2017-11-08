@@ -29,9 +29,9 @@ body {
 
 .hotline-bling {
     /*flex: 0 0 60%;*/
-    padding-top: .1rem;
+    padding-top: .15rem;
     color: #29b078;
-    font-size: .18rem;
+    font-size: .1rem;
     justify-content: space-between;
 }
 
@@ -46,7 +46,11 @@ body {
 .head-icon {
     padding-left: .2rem;
 }
-
+@media only screen and (min-width: 320px) {
+    .head-icon {
+        transform: scale(.8,.8);
+    }
+}
 
 /*导航栏*/
 .bgc-green {

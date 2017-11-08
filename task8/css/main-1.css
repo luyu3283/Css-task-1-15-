@@ -221,6 +221,11 @@
     box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 
+.circle-0 {
+    background-color: #29b078;
+    cursor: pointer;
+}
+
 .circle:hover {
     background-color: #29b078;
     cursor: pointer;
@@ -309,12 +314,13 @@
     margin: 2px;
     background-color: #999999;
     /*box-shadow: 0 0 5px rgba(0,0,0,.1);*/
+    margin-right: .2rem;
 
 }
 
 .friend-text {
     display: inline-block;
-    padding-left: .2rem;
+    /*padding-left: .2rem;*/
     border-bottom: 2px solid #fff;
     color: #999999;
     text-align: left;
