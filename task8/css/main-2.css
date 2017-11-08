@@ -32,11 +32,29 @@ main {
     transition: color 600ms;
     /*transition: background-color 700ms;*/
 }
+.nav-bar-hover > a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 600ms;
 
+}
 .nav-bar-hover:hover {
     background-color: #29b078;
     color: #ffffff;
     cursor: pointer;
+}
+.nav-bar-hover:hover > a {
+    background-color: #29b078;
+    color: #ffffff;
+    cursor: pointer;
+}
+#css-js,
+#java-pyhton,
+#mobile,
+#OP {
+    text-decoration: none;
+    color: #000000;
+    transition: color 600ms;
 }
 
 .main-web {
