@@ -1,0 +1,468 @@
+* {
+    font-size: 62.5%;
+}
+
+body{
+    min-width: 300px;
+    background-color: #fff;
+    line-height: 1;
+    text-align: center;
+}
+/*.container {*/
+    /*padding: 0;*/
+/*}*/
+
+header {
+    background-color: #1d7ad9;
+}
+
+.top-nav {
+    color: #ffffff;
+    /*padding: 7px;*/
+}
+.hotline-bling {
+    text-align: left;
+    padding: 7px;
+    padding-left: 0;
+}
+.web-log {
+    text-align: right;
+    transition: color 600ms;
+    padding-top: 7px;
+    padding-right: 0;
+}
+.login {
+    /*padding-right: 55px;*/
+    padding: 6px 43px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: background-color 600ms;
+}
+
+.login:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media only screen and (max-width: 520px) {
+    .login {padding: 6px; }
+}
+@media only screen and (max-width: 320px) {
+    .login {padding: 6px;}
+}
+
+.main-nav {
+    color: #000;
+}
+
+
+/*.my-nav > li {*/
+    /*background-color: #fff;*/
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+    /*margin-left: 10px;*/
+    /*padding: 2px;*/
+    /*border-radius: .05rem !important;*/
+
+/*}*/
+
+
+.my-btn {
+    background-color: #ffffff;
+    border-radius: .05rem !important;
+    margin: 26px 25px ;
+    padding: 7px 30px;
+    margin-right: 0;
+    transition: background-color 600ms;
+
+}
+.my-btn:hover {
+    background-color: #1d7ad9;
+
+}
+
+.my-btn > a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 600ms;
+
+}
+.my-btn:hover > a {
+    color: #ffffff;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+
+
+
+/*流程*/
+
+.line-circle {
+    height: 130px;
+}
+.center {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.box-process {
+    position: relative;
+    float: right;
+    padding: 0.36rem 0 0.24rem 0;
+    max-width: 640px;
+    width: 100%;
+    counter-reset: step; /*设置计数器*/
+}
+
+.box-step {
+    position: relative;
+    float: left;
+    width: 25%;
+    font-size: 0.18rem;
+    text-align: center;
+    color: #ff7f02;     /*文字部分颜色*/
+    /*background-color: rgba(0,0,0,0.4);*/
+
+}
+    /*序号效果*/
+.box-step::before {
+    position: relative;
+    display: block;
+    content: counter(step);   	/* 	设定计数器内容*/
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    background-color: #ff7f02; /*序号部分颜色*/
+    line-height: 22px;
+    border-radius: 24px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 3px auto 20px auto;
+    z-index: 10;
+}
+    /*横线效果*/
+.box-step::after {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    z-index: 1;     /*序号在横线上一层*/
+    content: '';    /*实现横线*/
+    width: 100%;
+    height: 3px;
+    background-color: #ff7f02; /*横线部分颜色*/
+    border-radius: 10px;
+}
+
+.box-process li.box-step ~ li:before,
+.box-process li.box-step ~ li:after {
+    background-color: #ccc;
+}
+.box-process li.box-step ~ li{
+    color: #ccc;
+}
+.box-step > span {
+    font-size: 15px;
+}
+@media only screen and (max-width: 320px) {
+    .box-step > span {
+        font-size: 10px;
+    }
+}
+
+/*小tips*/
+.main-title {
+    padding-left: 7px;
+    border-left: 4px solid #1d7ad9;
+    text-align: left;
+}
+@media only screen and (max-width: 520px) {
+    .main-title {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .main-title {
+        font-size: 10px;
+    }
+}
+
+
+/*盒子选项*/
+.main-big-box {
+    /*border-radius: 15px;*/
+    border: 1px solid #dedef8;
+}
+
+.top-title-box {
+    background-color: #f4f4f4;
+    padding: 10px;
+    /*float: left;*/
+    text-align: left;
+    color: #1d7ad9;
+    font-size: 15px;
+}
+.top-title-box span,
+.top-title-box img {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+
+.bottom-title-box {
+    background-color: #fbfcff;
+    padding: 15px;
+    /*float: left;*/
+    text-align: left;
+    font-size: 25px;
+    /*padding-left: 2rem;*/
+    border-bottom: 1px solid #dedef8;
+;
+}
+
+
+.bottom-box-left {
+    padding-left: 0 !important;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom-box-left {
+        /*text-align: center;*/
+        /*padding-left: 0 !important;*/
+
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .bottom-box-left,
+    .bottom-box-top,
+    .bottom-box-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 992px) {         /*768px ~ 992px(最大可见宽度）*/
+    .bottom-box-left {
+        /*padding: 12px 82px;*/
+        /*padding-right: 115px;*/
+    }
+}
+/*@media only screen and (min-width: 425px) {*/
+    /*.bottom-box-left {*/
+        /*padding: 12px 82px;*/
+        /*padding-right: 115px;*/
+        /*!*padding-left: 50px!important;*!*/
+    /*}*/
+/*}*/
+
+
+/*@media only screen and (max-width: 375px) {*/
+    /*.bottom-box-type {*/
+        /*padding-left: 70px !important;*/
+        /*padding-right: 75px;*/
+    /*}*/
+/*}*/
+/*@media only screen and (min-width: 425px) {*/
+    /*.bottom-box-type {*/
+        /*!*padding-left: 70px !important;*!*/
+        /*padding-right: 38px;*/
+    /*}*/
+/*}*/
+
+/*.bottom-box-left-text {*/
+
+/*}*/
+/*@media only screen and (max-width: 320px) {*/
+    /*.bottom-box-left-text {*/
+        /*padding: 30px;*/
+    /*}*/
+/*}*/
+/*@media only screen and (max-width: 375px) {*/
+    /*.bottom-box-left-text {*/
+        /*padding-left: 30px !important;*/
+        /*padding-right: 40px;*/
+
+    /*}*/
+/*}*/
+/*@media only screen and (min-width: 425px) {*/
+    /*.bottom-box-left-text {*/
+        /*padding-left: 70px !important;*/
+        /*padding-right: 90px;*/
+
+    /*}*/
+/*}*/
+/*@media only screen and (max-width: 768px) {*/
+    /*.bottom-box-left-text {*/
+        /*padding-left: 0 !important;*/
+        /*padding-right: 128px;*/
+    /*}*/
+    /*.box-type1 {*/
+        /*padding-left: 0;*/
+    /*}*/
+/*}*/
+
+
+
+.bottom-box-left,
+.bottom-box-right {
+    vertical-align: middle;
+}
+
+.box-type {
+    display: inline-block;
+    padding-left: 30px;
+    /*margin: 5% 0;*/
+}
+input[type='radio'] {
+    display: none;
+}
+
+i {
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #999999;
+    border-radius: 100%;
+}
+
+input[type='radio']:checked + i {
+    border: 5px solid #1d7ad9;
+    padding: 2px;
+}
+
+label span,
+label i {
+    vertical-align: middle;
+}
+
+.box-type > span {
+    font-size: 14px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-weight: lighter;
+}
+
+/*下拉菜单*/
+.dropdown-menu {
+    min-width: 100%;
+    text-align: center;
+}
+
+.down-arrow {
+    float: right;
+    background-color: #1d7ad9;
+    color: #ffffff;
+    width: 20px;
+    height: 25px;
+    margin-left: 15px;
+}
+/*.down-arrow,*/
+/*.btn span {*/
+    /*!*vertical-align: middle;*!*/
+/*}*/
+.info-btn {
+    min-width: 100%;
+}
+.info-btn > span {
+    font-size: 15px;
+    color: #999999;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 6px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.input-width {
+    width: 60px;
+    border: .5px solid #dedef8;
+}
+
+.next-box {
+    padding: .8rem 0 .5rem 0;
+}
+
+.next-page {
+    background-color: #e15053;
+    color: #ffffff;
+    width: 2rem;
+    transition: background-color 600ms;
+}
+.next-page:hover {
+    color: #ffffff;
+    background-color: #1d7ad9;
+
+}
+
+
+/*foot*/
+.foot-box > span {
+    font-size: 16px;
+}
+
+.foot-wechat > img {
+    /*float: right;*/
+}
+
+.website-set > span:hover {
+    color: #1d7ad9;
+    cursor: pointer;
+}
+
+.corp-number {
+    /*float: right;*/
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+}
+.corp-number > span {
+    margin-bottom: 2px;
+}
+/*.corp-number::after {*/
+    /*content: url("../img/qrcode.png");*/
+/*}*/
+
+
+/*.icon-user:before{*/
+    /*content:url(../img/user.png);*/
+/*}*/
+
+.foot-info {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width:1000px ) {
+    .foot-website {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:728px ) {
+    .foot-website,
+    .foot-box {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:768px ) {
+    .foot-website,
+    .foot-box {
+        padding: 20px;
+    }
+}

@@ -4,50 +4,87 @@
     <meta charset="utf-8">
     <title>Bootstrap 实例 - 响应式的列重置</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .steps-head {
+            padding: 25px;
+        }
+        .center {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .steps {
+            position: relative;
+            float: right;
+            padding: 0.36rem 0 0.24rem 0;
+            max-width: 640px;
+            width: 100%;
+            counter-reset: step;
+
+
+        }
+
+        .steps li {
+            position: relative;
+            float: left;
+            width: 25%;
+            list-style-type: none;
+            font-size: 0.18rem;
+            text-align: center;
+            color: #ff7f02;
+            /*background-color: rgba(0,0,0,0.4);*/
+        }
+        .steps li::before {
+            display: block;
+            content: counter(step);
+            counter-increment: step;
+            width: 24px;
+            height: 24px;
+            background-color: #ff7f02;
+            line-height: 24px;
+            border-radius: 24px;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            margin: 0 auto 24px auto;
+        }
+        .steps li::after {
+            position: absolute;
+            left: 0;
+            top: 12px;
+            z-index: -1;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #ff7f02;
+        }
+        .steps li.active ~ li:before,
+        .steps li.active ~ li:after {
+            background-color: #ccc;
+        }
+        .steps li.active ~ li{
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="row" >
-        <div class="col-xs-6 col-sm-3"
-             style="background-color: #dedef8;
-         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-xs-6 col-sm-3"
-             style="background-color: #dedef8;box-shadow:
-         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut.
-            </p>
-        </div>
-
-        <div class="clearfix visible-xs"></div>
-
-        <div class="col-xs-6 col-sm-3"
-             style="background-color: #dedef8;
-         box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-        <div class="col-xs-6 col-sm-3"
-             style="background-color: #dedef8;box-shadow:
-         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim
-            </p>
+    <div class="clear-fix">
+        <div class="steps-head center">
+            <ul class="steps ">
+                <li class="active">1.定制纸箱</li>
+                <li>2.选择数量</li>
+                <li>3.上传附件</li>
+                <li>4.确认下单</li>
+            </ul>
         </div>
     </div>
-</div>
+
+
+
+
+
 
 </body>
 </html>
