@@ -1,0 +1,115 @@
+
+
+$screen: 640px;
+$color-white :#ffffff;
+$percent100: 100%;
+$color-blue: #6ccdd5;
+
+html {
+  font-size:62.5%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: $screen;
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height:1rem;
+  padding: 1.3rem 0;
+  background-color: $color-blue;
+  line-height: .8rem;
+  color: $color-white;
+  font-size:1.5rem;
+  max-width: $screen;
+    a {
+      padding: 0 1rem ;
+      cursor: pointer;
+      color: $color-white;
+    }
+}
+
+a {
+  color: #6ccdd5;
+}
+
+h2 {
+  text-align: center;
+  padding: 0;
+  font-size:1.5rem;
+  margin: 0;
+}
+
+.sign-in {
+  float: right;
+}
+
+.close {
+  float: left;
+}
+
+main {
+  position: relative;
+  top:4.5rem;
+}
+
+.login {
+  width: $percent100;
+}
+
+.login-bar1,
+.login-bar2 {
+  background-color: $color-white;
+  margin-bottom: 1rem;
+}
+
+
+.login-img,
+.login-row {
+  vertical-align: middle;
+}
+
+.login-img {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.login-img {
+  transform: scale(.5,.5);
+}
+
+.login-row {
+  display: inline-block;
+}
+
+
+input {
+  padding-left: 20px;
+  border-left: .1px solid #dedef8;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  width: $percent100;
+  height: 1.5rem;
+}
+
+.btn-login {
+  cursor: pointer;
+  width: $percent100;
+  padding: 1.5rem;
+  background-color: $color-blue;
+  border: none;
+  color: $color-white;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.lose-code {
+  float: right;
+  padding: 0 1rem;
+}

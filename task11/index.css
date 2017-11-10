@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0;
+  background-color: #eaeaea; }
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 1rem;
+  padding: 1.3rem 0;
+  background-color: #6ccdd5;
+  line-height: .8rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  max-width: 640px; }
+  header a {
+    padding: 0 1rem;
+    cursor: pointer;
+    color: #ffffff; }
+
+a {
+  color: #6ccdd5; }
+
+h2 {
+  text-align: center;
+  padding: 0;
+  font-size: 1.5rem;
+  margin: 0; }
+
+.sign-in {
+  float: right; }
+
+.close {
+  float: left; }
+
+main {
+  position: relative;
+  top: 4.5rem; }
+
+.login {
+  width: 100%; }
+
+.login-bar1,
+.login-bar2 {
+  background-color: #ffffff;
+  margin-bottom: 1rem; }
+
+.login-img,
+.login-row {
+  vertical-align: middle; }
+
+.login-img {
+  display: inline-block;
+  padding: 1rem; }
+
+.login-img {
+  transform: scale(0.5, 0.5); }
+
+.login-row {
+  display: inline-block; }
+
+input {
+  padding-left: 20px;
+  border-left: .1px solid #dedef8;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
+  height: 1.5rem; }
+
+.btn-login {
+  cursor: pointer;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #6ccdd5;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.lose-code {
+  float: right;
+  padding: 0 1rem; }
+
+/*# sourceMappingURL=index.css.map */
