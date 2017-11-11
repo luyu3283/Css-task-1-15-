@@ -135,7 +135,8 @@ footer {
 .upload {
   font-size: 3rem;
   margin: 1rem;
-  color: #ffffff; }
+  color: #ffffff;
+  text-decoration: none; }
 
 a:hover {
   color: #dff0d8;
