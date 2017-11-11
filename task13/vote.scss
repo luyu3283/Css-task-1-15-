@@ -1,0 +1,167 @@
+$max-width: 640px;
+$color-blue: #29bde0;
+$color-light-blue: #b9e9f5;
+$color-gray: #eaeaea;
+$color-white: #ffffff;
+$border-line: 1px solid;
+
+
+html {
+  width: 100%;
+}
+body {
+  margin: 0 auto;
+  max-width: $max-width;
+  min-width: 300px;
+}
+
+header {
+  background: $color-blue;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  //font-size: 16px !important;
+}
+
+.head {
+  background: $color-blue;
+  //padding: 5%;
+  font-size: 1.2rem;
+  color: $color-white;
+  text-align: center;
+  display: flex;
+}
+
+.top-left,
+.top-right,
+.vote {
+  flex: 1;
+}
+
+.vote {
+  padding: 0 30%;
+  padding-top: 8px;
+}
+.title {
+  padding-left: 5%;
+}
+.main-audio {
+  background: $color-light-blue;
+  padding: 2.8%;
+  line-height: 1rem;
+  //font-size: 0.3rem;
+  margin: 0 1px;
+}
+//.main-audio span,
+//.main-audio .voice {
+//  vertical-align: middle;
+//}
+.head2 {
+  margin-top: -0.1%;
+  margin-left: 10%;
+  width: 0;
+  height: 0;
+  border-left: .5rem solid rgba(113, 51, 51, 0);
+  border-right: .5rem solid transparent;
+  border-top: .5rem solid $color-light-blue;
+}
+.voice {
+  border: none;
+  float: right;
+  background: $color-light-blue;
+  line-height: .5rem;
+  //padding-top: .25rem;
+  padding-right: .3rem;
+  position: relative;
+  top: -6px;
+}
+.p1 {
+  margin: 0;
+  color: $color-white;
+  font-size: 0.2rem;
+  padding: 0.2rem 0.8rem 0.2rem 3.5rem;
+}
+main {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  max-width: $max-width;
+  width: 100%;
+}
+.content {
+  background-color: $color-blue;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.content-box {
+  width: 27%;
+  float: left;
+  margin: 3%;
+}
+.content-box1 {
+  background: #f5c97b;
+  border: 4px solid $color-white;
+}
+.content1 {
+  text-align: center;
+  font-size: 1rem;
+  padding: 7%;
+}
+
+@media screen and (max-width: 320px){
+  .content1 {
+    padding: 7%;
+  }
+}
+@media screen and (min-width: 475px){
+  .content1 {
+    padding: 13%;
+  }
+}
+@media screen and (min-width: 768px){
+  .content1 {
+    padding: 28%;
+  }
+}
+
+.box1 {
+  text-align: center;
+  font-size: 0.2rem;
+  background: #83b09a;
+  margin: 0;
+  color: $color-white;
+}
+.tp{
+  width: 100%;
+  margin-top: 10%;
+  opacity: 0;
+}
+
+.content-box:hover .tp{
+  opacity:1;
+}
+/*foot*/
+footer{
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+
+}
+
+.button{
+  background: $color-blue;
+
+}
+.foot-button{
+  width: 80%;
+  margin: 5% 10%;
+  padding: 3%;
+  background: #fbb435;
+  font-size: 1.3rem;
+  color: $color-white;
+  border: 0;
+}

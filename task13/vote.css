@@ -1,0 +1,136 @@
+html {
+  width: 100%; }
+
+body {
+  margin: 0 auto;
+  max-width: 640px;
+  min-width: 300px; }
+
+header {
+  background: #29bde0;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0; }
+
+.head {
+  background: #29bde0;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex; }
+
+.top-left,
+.top-right,
+.vote {
+  flex: 1; }
+
+.vote {
+  padding: 0 30%;
+  padding-top: 8px; }
+
+.title {
+  padding-left: 5%; }
+
+.main-audio {
+  background: #b9e9f5;
+  padding: 2.8%;
+  line-height: 1rem;
+  margin: 0 1px; }
+
+.head2 {
+  margin-top: -0.1%;
+  margin-left: 10%;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid rgba(113, 51, 51, 0);
+  border-right: .5rem solid transparent;
+  border-top: 0.5rem solid #b9e9f5; }
+
+.voice {
+  border: none;
+  float: right;
+  background: #b9e9f5;
+  line-height: .5rem;
+  padding-right: .3rem;
+  position: relative;
+  top: -6px; }
+
+.p1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.2rem;
+  padding: 0.2rem 0.8rem 0.2rem 3.5rem; }
+
+main {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  max-width: 640px;
+  width: 100%; }
+
+.content {
+  background-color: #29bde0;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
+.content-box {
+  width: 27%;
+  float: left;
+  margin: 3%; }
+
+.content-box1 {
+  background: #f5c97b;
+  border: 4px solid #ffffff; }
+
+.content1 {
+  text-align: center;
+  font-size: 1rem;
+  padding: 7%; }
+
+@media screen and (max-width: 320px) {
+  .content1 {
+    padding: 7%; } }
+@media screen and (min-width: 475px) {
+  .content1 {
+    padding: 13%; } }
+@media screen and (min-width: 768px) {
+  .content1 {
+    padding: 28%; } }
+.box1 {
+  text-align: center;
+  font-size: 0.2rem;
+  background: #83b09a;
+  margin: 0;
+  color: #ffffff; }
+
+.tp {
+  width: 100%;
+  margin-top: 10%;
+  opacity: 0; }
+
+.content-box:hover .tp {
+  opacity: 1; }
+
+/*foot*/
+footer {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0; }
+
+.button {
+  background: #29bde0; }
+
+.foot-button {
+  width: 80%;
+  margin: 5% 10%;
+  padding: 3%;
+  background: #fbb435;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border: 0; }
+
+/*# sourceMappingURL=vote.css.map */
