@@ -1,0 +1,313 @@
+html{  font-size: 100px !important;  }
+@media only screen and (max-width: 600px)
+{
+    html{  font-size: 80px !important;  }
+}
+@media only screen and (max-width: 500px)
+{
+    html{  font-size: 70px !important;  }
+}
+@media only screen and (max-width: 400px)
+{
+    html{  font-size: 60px !important;  }
+}
+
+body {
+    min-width: 320px;
+    font-size: .13rem;
+    margin: 0;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+/*联系方式*/
+.top-bar {
+    width: 100%;
+}
+
+.hotline-bling {
+    color: #29b078;
+    text-align: left;
+    padding: 7px;
+    padding-left: 0;
+}
+@media screen and (max-width: 320px) {
+    .hotline-bling {
+        font-size: 5px;
+    }
+}
+
+.web-bling {
+    text-align: right;
+    transition: color 600ms;
+    padding: 3px;
+    padding-right: 0;
+}
+
+.head-icon {
+    padding-left: .2rem;
+}
+@media only screen and (min-width: 320px) {
+    .head-icon {
+        transform: scale(.8,.8);
+    }
+}
+
+/*导航栏*/
+.bgc-green {
+    background-color: #29b078;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+
+/*@media only screen and (min-width:768px) {*/
+/*.my-nav {*/
+/*float: right;*/
+/*}*/
+
+/*}*/
+
+
+.my-nav a {
+    /*display: inline-block;*/
+    display: block;
+    padding: 0.12rem;
+    height: 0.48rem;
+    letter-spacing: 5px;
+    line-height: 0.31rem !important;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 4px solid #29b078;
+}
+@media only screen and (min-width:768px) {
+    .my-nav{  float: right;}
+    .my-nav a {
+        height: 0.96rem;
+        padding: 0.24rem;
+        line-height: 0.62rem !important
+    }
+}
+/*导航栏*/
+
+header .nav {
+    padding: 0 .2rem;
+    background-color: #29b078;
+}
+
+@media screen and (min-width: 768px) {
+    header .nav {
+        padding: 0 .5rem;
+    }
+}
+
+header .nav__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav__logo {
+    height: .35rem;
+}
+
+@media screen and (min-width: 768px) {
+    header .nav__logo {
+        height: .5rem;
+        margin-left: 0.4rem;
+    }
+}
+
+header .nav input {
+    display: none;
+}
+
+header .nav input:checked + .nav__list {
+    height: 1.724rem;
+    border-top: .01rem solid rgba(225, 225, 225, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+    header .nav input:checked + .nav__list {
+        height: auto;
+    }
+}
+
+header .nav__btn {
+    position: relative;
+    width: .4rem;
+    height: .5rem;
+    background-color: #29bde0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header .nav__btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: .18rem;
+    height: .015rem;
+    background-color: #fff;
+}
+
+header .nav__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: .18rem;
+    height: .15rem;
+    border-width: .015rem;
+    border-style: solid none;
+    border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    header .nav__btn {
+        display: none;
+    }
+}
+
+header .nav__list {
+    list-style: none;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+    transition: height .4s;
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    header .nav__list {
+        display: flex;
+        width: auto;
+        height: auto;
+        /*margin-right: -.2rem;*/
+        border-top: none;
+    }
+}
+
+header .nav__item .link {
+    display: block;
+    padding: .12rem .2rem;
+    border-bottom: .001rem solid transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    header .nav__item .link {
+        line-height: .5rem;
+    }
+}
+
+header .nav__item .link:hover {
+    color: #000;
+    border-bottom: 0.001rem solid #fff;
+}
+
+header .nav__item .link--active {
+    border-bottom: 0.001rem solid #fff;
+}
+
+
+/*覆盖bootstrap的focus颜色*/
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: #29b078 !important;
+}
+
+.my-nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #29b078 !important;
+    border-bottom: 4px solid #fff;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: #29b078;
+    /*height: 2rem;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    color: #ffffff;
+    font-size: .16rem;
+    text-align: left;
+}
+
+/*.foot-items {*/
+    /*max-width: 940px;*/
+/*}*/
+
+.foot-jnshu,
+.foot-website {
+    padding: .3rem;
+}
+
+.foot-wechat {
+    padding-top: .3rem;
+    text-align: right;
+    padding-right: .5rem;
+}
+@media only screen and (max-width: 768px) {
+    .foot-wechat {
+        text-align: left;
+        padding: .3rem;
+    }
+
+
+}
+
+
+
+.foot-jnshu > h4 {
+    padding-bottom: .9rem;
+}
+.foot-jnshu > span {
+    padding-top: .5rem;
+}
+
+
+.foot-website > h4 {
+    padding-bottom: .5rem;
+    /*float: right;*/
+}
+.website-set > span {
+    padding-right: .3rem;
+}
+.foot-wechat > h4 {
+    font-size: .16rem;
+}
+
+.website-set {
+    margin-bottom: .2rem;
+}
+
+
+.corp-info {
+    display: block;
+    width: 100%;
+    background-color: #29b078;
+    height: .5rem;
+    border-top: .1px solid #eaeaea;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 15px;
+}
